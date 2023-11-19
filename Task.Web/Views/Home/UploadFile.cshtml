@@ -1,0 +1,16 @@
+﻿@model Microsoft.AspNetCore.Http.IFormFile
+
+<form method="post" enctype="multipart/form-data" asp-action="UploadFile">
+    <div class="form-group">
+        <label for="file">Select File:</label>
+        <input type="file" name="file" class="form-control" />
+    </div>
+    <br />
+    <center>
+    <button type="submit" class="btn btn-primary">Upload</button>
+    </center>
+</form>
+
+<div>
+    @ViewBag.Message
+</div>

@@ -1,0 +1,11 @@
+﻿
+
+<ul class="navbar-nav">
+    @if (Context.Request.Cookies["AuthToken"] is null)
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
+        </li>
+    }
+
+</ul>
